@@ -33,7 +33,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -79,7 +79,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -318,7 +318,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -499,7 +499,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -550,7 +550,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -774,7 +774,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -908,7 +908,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -1048,7 +1048,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
 </thead>
 <tbody>
 <tr>

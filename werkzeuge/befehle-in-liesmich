@@ -142,7 +142,7 @@ def befehlstabelle(hauptgruppen: OrderedDict[str, list[dict]]) -> list[str]:
     zeilen = [
         "<table>",
         "<thead>",
-        "<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Menschlich abgenommen</th></tr>",
+        "<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>",
         "</thead>",
         "<tbody>",
     ]
