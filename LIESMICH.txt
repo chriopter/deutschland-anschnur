@@ -473,9 +473,10 @@ muschel verzeichnis liste .
 <tr>
 <td>
 <details>
-<summary><code>bindball</code></summary>
+<summary><code>bandwickel</code></summary>
 <ul>
-<li><code>bindball mach</code> — wickelt Dateien zum Bindball</li>
+<li><code>bandwickel bespulen</code> — spult Dateien auf den Bandwickel (Magnetbandakte anlegen)</li>
+<li><code>bandwickel abspulen</code> — spult Dateien vom Bandwickel ab (Magnetbandakte entnehmen)</li>
 </ul>
 </details>
 </td>

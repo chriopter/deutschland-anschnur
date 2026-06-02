@@ -1,4 +1,5 @@
-{"befehl":["bindball","mach"],"gruppe":"Paketwerk","typ":"exec","programm":"/usr/bin/tar","argumente":[],"rest":"anhaengen","beschreibung":"wickelt Dateien zum Bindball"}
+{"befehl":["bandwickel","bespulen"],"gruppe":"Paketwerk","typ":"exec","programm":"/usr/bin/tar","argumente":["czf"],"rest":"anhaengen","beschreibung":"spult Dateien auf den Bandwickel (Magnetbandakte anlegen)","hinweis":"tar czf — \"create ze file\""}
+{"befehl":["bandwickel","abspulen"],"gruppe":"Paketwerk","typ":"exec","programm":"/usr/bin/tar","argumente":["xzf"],"rest":"anhaengen","beschreibung":"spult Dateien vom Bandwickel ab (Magnetbandakte entnehmen)","hinweis":"tar xzf — \"extrakt ze file\""}
 {"befehl":["quetsch","mach"],"gruppe":"Paketwerk","typ":"exec","programm":"/usr/bin/gzip","argumente":[],"rest":"anhaengen","beschreibung":"quetscht Dateien"}
 {"befehl":["quetsch","auf"],"gruppe":"Paketwerk","typ":"exec","programm":"/usr/bin/gunzip","argumente":[],"rest":"anhaengen","beschreibung":"bläst Gequetschtes auf"}
 {"befehl":["reisszu","mach"],"gruppe":"Paketwerk","typ":"exec","programm":"/usr/bin/zip","argumente":[],"rest":"anhaengen","beschreibung":"macht Reißverschlussarchiv"}
