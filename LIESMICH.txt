@@ -939,9 +939,10 @@ muschel verzeichnis liste .
 <tr>
 <td>
 <details>
-<summary><code>jotkuh</code></summary>
+<summary><code>kaffeeschriftverhoer</code></summary>
 <ul>
-<li><code>jotkuh</code> — siebt JSON</li>
+<li><code>kaffeeschriftverhoer</code> — verhört die Kaffeeschrift-Notierung nach Werten</li>
+<li><code>kaffeeschriftverhör</code> — verhört die Kaffeeschrift-Notierung nach Werten</li>
 </ul>
 </details>
 </td>

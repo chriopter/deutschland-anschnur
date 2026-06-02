@@ -25,6 +25,7 @@
 {"befehl":["quellwurst","press"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/gcc","argumente":[],"rest":"anhaengen","beschreibung":"presst Quellwurst"}
 {"befehl":["schlangenamt"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/python3","argumente":[],"rest":"anhaengen","beschreibung":"führt Schlangenwerk aus"}
 {"befehl":["paketpfennig"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/pip","argumente":[],"rest":"anhaengen","beschreibung":"verwaltet Python-Pakete"}
-{"befehl":["jotkuh"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/jq","argumente":[],"rest":"anhaengen","beschreibung":"siebt JSON"}
+{"befehl":["kaffeeschriftverhoer"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/jq","argumente":[],"rest":"anhaengen","beschreibung":"verhört die Kaffeeschrift-Notierung nach Werten"}
+{"befehl":["kaffeeschriftverhör"],"gruppe":"Entwicklung","typ":"alias","ziel":["kaffeeschriftverhoer"],"rest":"anhaengen","beschreibung":"verhört die Kaffeeschrift-Notierung nach Werten"}
 {"befehl":["dateikampfstift"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/vim","argumente":[],"rest":"anhaengen","beschreibung":"bearbeitet Text gefährlich"}
 {"befehl":["weichgriffschreiber"],"gruppe":"Entwicklung","typ":"exec","programm":"/usr/bin/nano","argumente":[],"rest":"anhaengen","beschreibung":"bearbeitet Text sanft"}
