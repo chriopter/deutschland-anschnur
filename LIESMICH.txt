@@ -22,7 +22,7 @@ Die Muschel meldet verfügbare Erneuerungen beim Start und öffnet danach einen 
 
 ```bash
 muschel
-muschel verzeichnis liste .
+muschel liste .
 ```
 
 ## BEFEHLE
