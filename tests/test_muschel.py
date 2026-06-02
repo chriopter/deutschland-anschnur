@@ -43,11 +43,11 @@ def run_muschel(input_text=None, *args, env_path=None, befehle=None):
 
 class MuschelTests(unittest.TestCase):
     def test_help_lists_catalog_commands(self):
-        result = run_muschel("hilfe\n")
+        result = run_muschel("gehilfe\n")
 
         self.assertEqual(result.returncode, 0)
         self.assertIn("Zugelassene Amtsbefehle", result.stdout)
-        self.assertIn("verzeichnis liste", result.stdout)
+        self.assertIn("liste", result.stdout)
         self.assertIn("hapsmann erneuern", result.stdout)
         self.assertIn("hafener zusammensetz hoch", result.stdout)
 
@@ -69,14 +69,14 @@ class MuschelTests(unittest.TestCase):
         self.assertIn("konnte im System nicht festgestellt werden", result.stdout)
 
     def test_exit_command_terminates_successfully(self):
-        result = run_muschel("verlassen\n")
+        result = run_muschel("exitus\n")
 
         self.assertEqual(result.returncode, 0)
         self.assertIn("Muschel wird ordnungsgemäß geschlossen", result.stdout)
 
     def test_directory_commands_keep_changed_place(self):
         with tempfile.TemporaryDirectory() as directory:
-            result = run_muschel(f"verzeichnis wechsel {directory}\nverzeichnis ort\n")
+            result = run_muschel(f"changiere direktionsort {directory}\ndruckdienstort\n")
 
         self.assertEqual(result.returncode, 0)
         self.assertIn(directory, result.stdout)
@@ -85,7 +85,7 @@ class MuschelTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             akte = Path(directory) / "akte.txt"
             akte.write_text("Amtsinhalt\n")
-            result = run_muschel(f"datei lesen {akte}\ndatei zeigen {akte}\n")
+            result = run_muschel(f"katze {akte}\naktenlage {akte}\n")
 
         self.assertEqual(result.returncode, 0)
         self.assertIn("Amtsinhalt", result.stdout)
@@ -113,17 +113,17 @@ class MuschelTests(unittest.TestCase):
         self.assertIn("dienst", result.stdout)
 
     def test_command_family_without_subcommand_lists_subcommands(self):
-        result = run_muschel("hapsmann\ndateien\ndauer\nspitzname\n")
+        result = run_muschel("hapsmann\npersonen\ndienst\nspitzname\n")
 
         self.assertEqual(result.returncode, 0)
         self.assertIn("Teilbefehle für hapsmann", result.stdout)
         self.assertIn("hapsmann erneuern", result.stdout)
-        self.assertIn("Teilbefehle für dateien", result.stdout)
-        self.assertIn("dateien petz", result.stdout)
-        self.assertIn("Teilbefehle für dauer", result.stdout)
-        self.assertIn("dauer guck", result.stdout)
+        self.assertIn("Teilbefehle für personen", result.stdout)
+        self.assertIn("personen kennziffer", result.stdout)
+        self.assertIn("Teilbefehle für dienst", result.stdout)
+        self.assertIn("dienst liste", result.stdout)
         self.assertIn("Teilbefehle für spitzname", result.stdout)
-        self.assertIn("spitzname liste", result.stdout)
+        self.assertIn("spitzname pfad", result.stdout)
         self.assertNotIn("Der Befehl \"hapsmann\" ist nicht erlaubt", result.stdout)
 
     def test_catalog_checker_accepts_repo_catalog(self):
@@ -238,7 +238,7 @@ class MuschelTests(unittest.TestCase):
         self.assertIn("Muschel ist bereits geöffnet", rc)
         self.assertIn("complete -o bashdefault -o default -F __anschnur_vervollstaendige hapsmann", rc)
         self.assertIn("hafener zusammensetz hoch", rc)
-        self.assertIn("verzeichnis()", rc)
+        self.assertIn("changiere()", rc)
         self.assertIn('cd "$@"', rc)
 
 

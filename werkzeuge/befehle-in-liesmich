@@ -94,14 +94,7 @@ def varianten_liste(daten: list[dict]) -> list[str]:
     return zeilen
 
 
-def abgenommen(daten: list[dict]) -> bool:
-    sachlich = [e for e in daten if e.get("typ") != "alias"]
-    pruefen = sachlich or daten
-    return bool(pruefen) and all(e.get("abgenommen") for e in pruefen)
-
-
 def befehlszellen(name: str, daten: list[dict]) -> list[str]:
-    siegel = "✅" if abgenommen(daten) else ""
     return [
         "<td>",
         "<details>",
@@ -110,7 +103,6 @@ def befehlszellen(name: str, daten: list[dict]) -> list[str]:
         "</details>",
         "</td>",
         f"<td>{html_code(unredliche_befehle(daten))}</td>",
-        f"<td align=\"center\">{siegel}</td>",
     ]
 
 
@@ -142,7 +134,7 @@ def befehlstabelle(hauptgruppen: OrderedDict[str, list[dict]]) -> list[str]:
     zeilen = [
         "<table>",
         "<thead>",
-        "<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>",
+        "<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>",
         "</thead>",
         "<tbody>",
     ]

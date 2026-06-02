@@ -33,44 +33,41 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <details>
-<summary><code>hilfe</code></summary>
+<summary><code>gehilfe</code></summary>
 <ul>
-<li><code>hilfe</code> — zeigt diese dienstliche Auskunft</li>
+<li><code>gehilfe</code> — zeigt diese dienstliche Auskunft</li>
 </ul>
 </details>
 </td>
 <td><code>help</code></td>
-<td align="center">✅</td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>verlassen</code></summary>
+<summary><code>exitus</code></summary>
 <ul>
-<li><code>verlassen</code> — schließt die Muschel ordnungsgemäß</li>
+<li><code>exitus</code> — schließt die Muschel ordnungsgemäß</li>
 </ul>
 </details>
 </td>
 <td><code>exit</code></td>
-<td align="center">✅</td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>muschel</code></summary>
+<summary><code>aktenneuverlesung</code></summary>
 <ul>
-<li><code>muschel neu laden</code> — lädt die Befehlsakten neu</li>
+<li><code>aktenneuverlesung</code> — lädt die Befehlsakten neu</li>
 </ul>
 </details>
 </td>
 <td><code>source</code></td>
-<td align="center">✅</td>
 </tr>
 </tbody>
 </table>
@@ -79,49 +76,63 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <details>
-<summary><code>verzeichnis</code></summary>
+<summary><code>druckdienstort</code></summary>
 <ul>
-<li><code>verzeichnis ort</code> — zeigt den derzeitigen Ort</li>
-<li><code>verzeichnis liste</code> — zeigt einen Verzeichnisbestand</li>
-<li><code>verzeichnis wechsel</code> — wechselt den derzeitigen Ort</li>
-<li><code>verzeichnis mach</code> — legt Verzeichnisse an</li>
-<li><code>verzeichnis weg</code> — entfernt leere Verzeichnisse</li>
+<li><code>druckdienstort</code> — zeigt den derzeitigen Ort</li>
 </ul>
 </details>
 </td>
-<td><code>pwd, ls, cd, mkdir, rmdir</code></td>
-<td align="center"></td>
+<td><code>pwd</code></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>datei</code></summary>
+<summary><code>liste</code></summary>
 <ul>
-<li><code>datei lesen</code> — liest eine Datei</li>
-<li><code>datei zeigen</code> — zeigt Dateiangaben</li>
-<li><code>datei antipp</code> — legt Dateien an oder tippt Zeiten neu</li>
-<li><code>datei blaettern</code> — blättert durch Dateien</li>
-<li><code>datei blättern</code> — blättert durch Dateien</li>
-<li><code>datei kopf</code> — zeigt den Dateikopf</li>
-<li><code>datei schwanz</code> — zeigt den Dateischwanz</li>
-<li><code>datei abschrift</code> — fertigt Abschriften an</li>
-<li><code>datei umlagern</code> — verlegt Dateien amtlich</li>
-<li><code>datei tilgen</code> — tilgt Dateien</li>
-<li><code>datei verweis</code> — schnürt Dateiverweise</li>
-<li><code>datei rechtezettel</code> — ändert Zugriffsrechte</li>
-<li><code>datei habsmann</code> — ändert Eigentümer und Gruppe</li>
-<li><code>datei wasndas</code> — bestimmt Dateiart</li>
+<li><code>liste</code> — zeigt einen Verzeichnisbestand</li>
 </ul>
 </details>
 </td>
-<td><code>cat, stat, touch, less, head, tail, cp, mv, rm, ln, chmod, chown, file</code></td>
-<td align="center"></td>
+<td><code>ls</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>changiere</code></summary>
+<ul>
+<li><code>changiere direktionsort</code> — wechselt den derzeitigen Ort</li>
+</ul>
+</details>
+</td>
+<td><code>cd</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>katze</code></summary>
+<ul>
+<li><code>katze</code> — liest eine Datei</li>
+</ul>
+</details>
+</td>
+<td><code>cat</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>aktenlage</code></summary>
+<ul>
+<li><code>aktenlage</code> — zeigt Dateiangaben</li>
+</ul>
+</details>
+</td>
+<td><code>stat</code></td>
 </tr>
 <tr>
 <td>
@@ -136,7 +147,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>ip, ping</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -149,7 +159,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>systemctl</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -164,32 +173,175 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>sh, cat, systemctl</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>platz</code></summary>
+<summary><code>dienstorterzeugen</code></summary>
 <ul>
-<li><code>platz frass</code> — zeigt Platzfraß</li>
-<li><code>platz fraß</code> — zeigt Platzfraß</li>
+<li><code>dienstorterzeugen</code> — legt Verzeichnisse an</li>
+</ul>
+</details>
+</td>
+<td><code>mkdir</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>dienstorterzeugungsaufloesung</code></summary>
+<ul>
+<li><code>dienstorterzeugungsaufloesung</code> — entfernt leere Verzeichnisse</li>
+<li><code>dienstorterzeugungsauflösung</code> — entfernt leere Verzeichnisse</li>
+</ul>
+</details>
+</td>
+<td><code>rmdir</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>beruehre</code></summary>
+<ul>
+<li><code>beruehre</code> — legt Dateien an oder tippt Zeiten neu</li>
+<li><code>berühre</code> — legt Dateien an oder tippt Zeiten neu</li>
+</ul>
+</details>
+</td>
+<td><code>touch</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>weniger</code></summary>
+<ul>
+<li><code>weniger</code> — blättert durch Dateien</li>
+</ul>
+</details>
+</td>
+<td><code>less</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>ruebe</code></summary>
+<ul>
+<li><code>ruebe</code> — zeigt den Dateikopf</li>
+<li><code>rübe</code> — zeigt den Dateikopf</li>
+</ul>
+</details>
+</td>
+<td><code>head</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>schwanz</code></summary>
+<ul>
+<li><code>schwanz</code> — zeigt den Dateischwanz</li>
+</ul>
+</details>
+</td>
+<td><code>tail</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>kohlepapier</code></summary>
+<ul>
+<li><code>kohlepapier</code> — fertigt Abschriften an</li>
+<li><code>kp</code> — fertigt Abschriften an</li>
+</ul>
+</details>
+</td>
+<td><code>cp</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>umzug</code></summary>
+<ul>
+<li><code>umzug</code> — verlegt Dateien amtlich</li>
+</ul>
+</details>
+</td>
+<td><code>mv</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>entsorgung</code></summary>
+<ul>
+<li><code>entsorgung</code> — tilgt Dateien</li>
+</ul>
+</details>
+</td>
+<td><code>rm</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>querverbinder</code></summary>
+<ul>
+<li><code>querverbinder</code> — schnürt Dateiverweise</li>
+</ul>
+</details>
+</td>
+<td><code>ln</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>wechselmodus</code></summary>
+<ul>
+<li><code>wechselmodus</code> — ändert Zugriffsrechte</li>
+</ul>
+</details>
+</td>
+<td><code>chmod</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>habsmann</code></summary>
+<ul>
+<li><code>habsmann</code> — ändert Eigentümer und Gruppe</li>
+</ul>
+</details>
+</td>
+<td><code>chown</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>scheibennutzung</code></summary>
+<ul>
+<li><code>scheibennutzung</code> — zeigt Platzfraß</li>
 </ul>
 </details>
 </td>
 <td><code>du</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>platte</code></summary>
+<summary><code>scheibenfreisicht</code></summary>
 <ul>
-<li><code>platte stand</code> — zeigt Plattenfüllstand</li>
+<li><code>scheibenfreisicht</code> — zeigt Plattenfüllstand</li>
 </ul>
 </details>
 </td>
 <td><code>df</code></td>
-<td align="center"></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>akte</code></summary>
+<ul>
+<li><code>akte</code> — bestimmt Dateiart</li>
+</ul>
+</details>
+</td>
+<td><code>file</code></td>
 </tr>
 <tr>
 <td>
@@ -201,19 +353,17 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>man</code></td>
-<td align="center">✅</td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>fundort</code></summary>
+<summary><code>welches</code></summary>
 <ul>
-<li><code>fundort befehl</code> — zeigt Befehlsfundort</li>
+<li><code>welches</code> — zeigt Befehlsfundort</li>
 </ul>
 </details>
 </td>
 <td><code>which</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -226,19 +376,17 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>whereis</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
 <summary><code>spitzname</code></summary>
 <ul>
-<li><code>spitzname liste</code> — zeigt Spitznamen</li>
+<li><code>spitzname pfad</code> — zeigt Spitznamen</li>
 </ul>
 </details>
 </td>
 <td><code>bash</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -250,19 +398,17 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>bash</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>bildschirm</code></summary>
+<summary><code>reinigen</code></summary>
 <ul>
-<li><code>bildschirm fegen</code> — fegt die Ansicht leer</li>
+<li><code>reinigen</code> — fegt die Ansicht leer</li>
 </ul>
 </details>
 </td>
 <td><code>clear</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -282,7 +428,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>pacman</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -309,7 +454,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>apt</code></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -318,179 +462,173 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <details>
-<summary><code>text</code></summary>
+<summary><code>fahndung</code></summary>
 <ul>
-<li><code>text fahndung</code> — fahndet in Text</li>
+<li><code>fahndung</code> — fahndet in Text</li>
 </ul>
 </details>
 </td>
 <td><code>grep</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>datei</code></summary>
+<summary><code>ortung</code></summary>
 <ul>
-<li><code>datei ortung</code> — ortet Dateien</li>
+<li><code>ortung</code> — ortet Dateien</li>
 </ul>
 </details>
 </td>
 <td><code>find</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>argumente</code></summary>
+<summary><code>argumentationsverlaengerung</code></summary>
 <ul>
-<li><code>argumente kleben</code> — klebt Argumente zusammen</li>
+<li><code>argumentationsverlaengerung</code> — klebt Argumente zusammen</li>
 </ul>
 </details>
 </td>
 <td><code>xargs</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>wort</code></summary>
+<summary><code>wortzaehl</code></summary>
 <ul>
-<li><code>wort zaehlamt</code> — zählt Zeilen Wörter Zeichen</li>
-<li><code>wort zählamt</code> — zählt Zeilen Wörter Zeichen</li>
+<li><code>wortzaehl</code> — zählt Zeilen Wörter Zeichen</li>
 </ul>
 </details>
 </td>
 <td><code>wc</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>zeilen</code></summary>
+<summary><code>ordnen</code></summary>
 <ul>
-<li><code>zeilen ordnen</code> — ordnet Zeilen</li>
+<li><code>ordnen</code> — ordnet Zeilen</li>
 </ul>
 </details>
 </td>
 <td><code>sort</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>doppel</code></summary>
+<summary><code>vereinzelung</code></summary>
 <ul>
-<li><code>doppel tilgen</code> — tilgt Nachbardoppel</li>
-<li><code>doppel zapf</code> — zapft Ausgabe doppelt</li>
+<li><code>vereinzelung</code> — tilgt Nachbardoppel</li>
 </ul>
 </details>
 </td>
-<td><code>uniq, tee</code></td>
-<td align="center"></td>
+<td><code>uniq</code></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>spalten</code></summary>
+<summary><code>schnipp</code></summary>
 <ul>
-<li><code>spalten schnipp</code> — schneidet Spalten</li>
+<li><code>schnipp</code> — schneidet Spalten</li>
 </ul>
 </details>
 </td>
 <td><code>cut</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>zeichen</code></summary>
+<summary><code>buchstabentausch</code></summary>
 <ul>
-<li><code>zeichen tausch</code> — tauscht Zeichen</li>
+<li><code>buchstabentausch</code> — tauscht Zeichen</li>
 </ul>
 </details>
 </td>
 <td><code>tr</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>stromtext</code></summary>
+<summary><code>strombeeinflusser</code></summary>
 <ul>
-<li><code>stromtext aendern</code> — ändert Stromtext</li>
-<li><code>stromtext ändern</code> — ändert Stromtext</li>
+<li><code>strombeeinflusser</code> — ändert Stromtext</li>
 </ul>
 </details>
 </td>
 <td><code>sed</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>feld</code></summary>
+<summary><code>dreiherrenwerk</code></summary>
 <ul>
-<li><code>feld akrobat</code> — verarbeitet Textfelder</li>
+<li><code>dreiherrenwerk</code> — verarbeitet Textfelder</li>
 </ul>
 </details>
 </td>
 <td><code>awk</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>unterschied</code></summary>
+<summary><code>differenziert</code></summary>
 <ul>
-<li><code>unterschied zeigen</code> — zeigt Unterschiede</li>
+<li><code>differenziert</code> — zeigt Unterschiede</li>
 </ul>
 </details>
 </td>
 <td><code>diff</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>flicken</code></summary>
+<summary><code>flick</code></summary>
 <ul>
-<li><code>flicken anwenden</code> — wendet Flicken an</li>
+<li><code>flick</code> — wendet Flicken an</li>
 </ul>
 </details>
 </td>
 <td><code>patch</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>namen</code></summary>
+<summary><code>doppelzapf</code></summary>
 <ul>
-<li><code>namen rest</code> — zeigt Namensrest</li>
+<li><code>doppelzapf</code> — zapft Ausgabe doppelt</li>
+</ul>
+</details>
+</td>
+<td><code>tee</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>basisname</code></summary>
+<ul>
+<li><code>basisname</code> — zeigt Namensrest</li>
 </ul>
 </details>
 </td>
 <td><code>basename</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>ordner</code></summary>
+<summary><code>pfadrumpf</code></summary>
 <ul>
-<li><code>ordner davor</code> — zeigt Vorordner</li>
+<li><code>pfadrumpf</code> — zeigt Vorordner</li>
 </ul>
 </details>
 </td>
 <td><code>dirname</code></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -499,7 +637,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -513,20 +651,28 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>tar</code></td>
-<td align="center">✅</td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>quetsch</code></summary>
+<summary><code>antilopenquetsch</code></summary>
 <ul>
-<li><code>quetsch mach</code> — quetscht Dateien</li>
-<li><code>quetsch auf</code> — bläst Gequetschtes auf</li>
+<li><code>antilopenquetsch</code> — quetscht Dateien</li>
 </ul>
 </details>
 </td>
-<td><code>gzip, gunzip</code></td>
-<td align="center"></td>
+<td><code>gzip</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>kanonenantilopenquetsch</code></summary>
+<ul>
+<li><code>kanonenantilopenquetsch</code> — bläst Gequetschtes auf</li>
+</ul>
+</details>
+</td>
+<td><code>gunzip</code></td>
 </tr>
 <tr>
 <td>
@@ -541,7 +687,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>zip, unzip</code></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -550,74 +695,109 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <details>
-<summary><code>vorgang</code></summary>
+<summary><code>kw</code></summary>
 <ul>
-<li><code>vorgang liste</code> — listet Vorgänge</li>
-<li><code>vorgang aufsicht</code> — zeigt Vorgangsaufsicht</li>
-<li><code>vorgang huebschaufsicht</code> — zeigt hübsche Vorgangsaufsicht</li>
-<li><code>vorgang hübschaufsicht</code> — zeigt hübsche Vorgangsaufsicht</li>
-<li><code>vorgang beenden</code> — beendet Vorgang</li>
-<li><code>vorgang allebeenden</code> — beendet Vorgänge nach Namen</li>
+<li><code>kw</code> — listet Vorgänge</li>
 </ul>
 </details>
 </td>
-<td><code>ps, top, htop, kill, killall</code></td>
-<td align="center"></td>
+<td><code>ps</code></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>reichsgeraet</code></summary>
+<summary><code>grossartig</code></summary>
 <ul>
-<li><code>reichsgeraet ausweis</code> — zeigt Geräteausweis</li>
-<li><code>reichsgerät ausweis</code> — zeigt Geräteausweis</li>
+<li><code>grossartig</code> — zeigt Vorgangsaufsicht</li>
+<li><code>großartig</code> — zeigt Vorgangsaufsicht</li>
+</ul>
+</details>
+</td>
+<td><code>top</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>himmelsgrossartig</code></summary>
+<ul>
+<li><code>himmelsgrossartig</code> — zeigt hübsche Vorgangsaufsicht</li>
+<li><code>himmelsgroßartig</code> — zeigt hübsche Vorgangsaufsicht</li>
+</ul>
+</details>
+</td>
+<td><code>htop</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>mord</code></summary>
+<ul>
+<li><code>mord</code> — beendet Vorgang</li>
+</ul>
+</details>
+</td>
+<td><code>kill</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>ermordealle</code></summary>
+<ul>
+<li><code>ermordealle</code> — beendet Vorgänge nach Namen</li>
+</ul>
+</details>
+</td>
+<td><code>killall</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>duname</code></summary>
+<ul>
+<li><code>duname</code> — zeigt Geräteausweis</li>
 </ul>
 </details>
 </td>
 <td><code>uname</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>betriebszeit</code></summary>
+<summary><code>hochzeit</code></summary>
 <ul>
-<li><code>betriebszeit amtlich</code> — zeigt Betriebszeit</li>
+<li><code>hochzeit</code> — zeigt Betriebszeit</li>
 </ul>
 </details>
 </td>
 <td><code>uptime</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>uhrzeit</code></summary>
+<summary><code>dattel</code></summary>
 <ul>
-<li><code>uhrzeit bescheid</code> — zeigt Uhrzeitbescheid</li>
+<li><code>dattel</code> — zeigt Uhrzeitbescheid</li>
 </ul>
 </details>
 </td>
 <td><code>date</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>werbinichdenn</code></summary>
+<summary><code>werbinich</code></summary>
 <ul>
-<li><code>werbinichdenn</code> — zeigt Benutzername</li>
+<li><code>werbinich</code> — zeigt Benutzername</li>
 </ul>
 </details>
 </td>
 <td><code>whoami</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -625,24 +805,21 @@ muschel verzeichnis liste .
 <summary><code>personen</code></summary>
 <ul>
 <li><code>personen kennziffer</code> — zeigt Personenkennziffern</li>
-<li><code>personen wechsel</code> — wechselt Person</li>
 </ul>
 </details>
 </td>
-<td><code>id, su</code></td>
-<td align="center"></td>
+<td><code>id</code></td>
 </tr>
 <tr>
 <td>
 <details>
 <summary><code>umwelt</code></summary>
 <ul>
-<li><code>umwelt bestand</code> — zeigt Umweltbestand</li>
+<li><code>umwelt</code> — zeigt Umweltbestand</li>
 </ul>
 </details>
 </td>
 <td><code>env</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -654,118 +831,127 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>sudo</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>augen</code></summary>
+<summary><code>personenersatzantrag</code></summary>
 <ul>
-<li><code>augen zu</code> — wartet amtlich</li>
+<li><code>personenersatzantrag</code> — wechselt Person</li>
+</ul>
+</details>
+</td>
+<td><code>su</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>nickerchen</code></summary>
+<ul>
+<li><code>nickerchen</code> — wartet amtlich</li>
 </ul>
 </details>
 </td>
 <td><code>sleep</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>dauer</code></summary>
+<summary><code>armbanduhr</code></summary>
 <ul>
-<li><code>dauer guck</code> — guckt dauernd</li>
+<li><code>armbanduhr</code> — guckt dauernd</li>
 </ul>
 </details>
 </td>
 <td><code>watch</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>geraet</code></summary>
+<summary><code>berg</code></summary>
 <ul>
-<li><code>geraet dranhaeng</code> — hängt Gerät ein</li>
-<li><code>gerät dranhäng</code> — hängt Gerät ein</li>
-<li><code>geraet abhaeng</code> — hängt Gerät aus</li>
-<li><code>gerät abhäng</code> — hängt Gerät aus</li>
+<li><code>berg</code> — hängt Gerät ein</li>
 </ul>
 </details>
 </td>
-<td><code>mount, umount</code></td>
-<td align="center"></td>
+<td><code>mount</code></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>klotz</code></summary>
+<summary><code>tal</code></summary>
 <ul>
-<li><code>klotz guck</code> — zeigt Speicherklötze</li>
+<li><code>tal</code> — hängt Gerät aus</li>
+</ul>
+</details>
+</td>
+<td><code>umount</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>speicherklotzregister</code></summary>
+<ul>
+<li><code>speicherklotzregister</code> — zeigt Speicherklötze</li>
 </ul>
 </details>
 </td>
 <td><code>lsblk</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>dateien</code></summary>
+<summary><code>verpetzdatei</code></summary>
 <ul>
-<li><code>dateien petz</code> — petzt offene Dateien</li>
+<li><code>verpetzdatei</code> — petzt offene Dateien</li>
 </ul>
 </details>
 </td>
 <td><code>lsof</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>ram</code></summary>
+<summary><code>vorratfrei</code></summary>
 <ul>
-<li><code>ram nochda</code> — zeigt freien Speicher</li>
+<li><code>vorratfrei</code> — zeigt freien Speicher</li>
 </ul>
 </details>
 </td>
 <td><code>free</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
 <summary><code>tagebuch</code></summary>
 <ul>
-<li><code>tagebuch dienst</code> — zeigt Diensttagebuch</li>
+<li><code>tagebuch</code> — zeigt Diensttagebuch</li>
 </ul>
 </details>
 </td>
 <td><code>journalctl</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>zeitfolge</code></summary>
+<summary><code>chronometertabelle</code></summary>
 <ul>
-<li><code>zeitfolge verzeichnis</code> — verwaltet Zeitfolgen</li>
+<li><code>chronometertabelle</code> — verwaltet Zeitfolgen</li>
 </ul>
 </details>
 </td>
 <td><code>crontab</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>kern</code></summary>
+<summary><code>kerngemurmel</code></summary>
 <ul>
-<li><code>kern gemurmel</code> — zeigt Kerngemurmel</li>
+<li><code>kerngemurmel</code> — zeigt Kerngemurmel</li>
 </ul>
 </details>
 </td>
 <td><code>dmesg</code></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -774,35 +960,63 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <details>
-<summary><code>netz</code></summary>
+<summary><code>verfolgungsstrecke</code></summary>
 <ul>
-<li><code>netz wegewurst</code> — verfolgt die Wegewurst</li>
-<li><code>netz sockenschau</code> — zeigt Netzsocken</li>
-<li><code>netz lagebericht</code> — zeigt Netzlage</li>
-<li><code>netz kringel</code> — kringelt Daten übers Netz</li>
+<li><code>verfolgungsstrecke</code> — verfolgt die Wegewurst</li>
 </ul>
 </details>
 </td>
-<td><code>traceroute, ss, netstat, curl</code></td>
-<td align="center"></td>
+<td><code>traceroute</code></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>fernzieh</code></summary>
+<summary><code>sockenkennzahl</code></summary>
 <ul>
-<li><code>fernzieh</code> — zieht Fernbestand</li>
+<li><code>sockenkennzahl</code> — zeigt Netzsocken</li>
+</ul>
+</details>
+</td>
+<td><code>ss</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>netzbericht</code></summary>
+<ul>
+<li><code>netzbericht</code> — zeigt Netzlage</li>
+</ul>
+</details>
+</td>
+<td><code>netstat</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>kringel</code></summary>
+<ul>
+<li><code>kringel</code> — kringelt Daten übers Netz</li>
+</ul>
+</details>
+</td>
+<td><code>curl</code></td>
+</tr>
+<tr>
+<td>
+<details>
+<summary><code>netzhol</code></summary>
+<ul>
+<li><code>netzhol</code> — zieht Fernbestand</li>
 </ul>
 </details>
 </td>
 <td><code>wget</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -814,7 +1028,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>ssh</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -826,80 +1039,72 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>scp</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>gleichschalt</code></summary>
+<summary><code>ferngleichschalt</code></summary>
 <ul>
-<li><code>gleichschalt uebertrag</code> — gleicht Übertragung ab</li>
-<li><code>gleichschalt übertrag</code> — gleicht Übertragung ab</li>
+<li><code>ferngleichschalt</code> — gleicht Übertragung ab</li>
 </ul>
 </details>
 </td>
 <td><code>rsync</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>dns</code></summary>
+<summary><code>buddel</code></summary>
 <ul>
-<li><code>dns buddel</code> — buddelt DNS aus</li>
+<li><code>buddel</code> — buddelt DNS aus</li>
 </ul>
 </details>
 </td>
 <td><code>dig</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>namensschild</code></summary>
+<summary><code>telefonbuch</code></summary>
 <ul>
-<li><code>namensschild guck</code> — guckt ins Namensschild</li>
+<li><code>telefonbuch</code> — guckt ins Namensschild</li>
 </ul>
 </details>
 </td>
 <td><code>nslookup</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>gastgeber</code></summary>
+<summary><code>wirt</code></summary>
 <ul>
-<li><code>gastgeber auskunft</code> — fragt Gastgeber aus</li>
+<li><code>wirt</code> — fragt Gastgeber aus</li>
 </ul>
 </details>
 </td>
 <td><code>host</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>port</code></summary>
+<summary><code>netzkatze</code></summary>
 <ul>
-<li><code>port klingel</code> — klingelt an Ports</li>
+<li><code>netzkatze</code> — klingelt an Ports</li>
 </ul>
 </details>
 </td>
 <td><code>nc</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>paket</code></summary>
+<summary><code>netzprotokolltabelle</code></summary>
 <ul>
-<li><code>paket polizei</code> — verwaltet Paketpolizei</li>
+<li><code>netzprotokolltabelle</code> — verwaltet Paketpolizei</li>
 </ul>
 </details>
 </td>
 <td><code>iptables</code></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -908,7 +1113,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -942,31 +1147,28 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>git</code></td>
-<td align="center">✅</td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>machmal</code></summary>
+<summary><code>erschaffen</code></summary>
 <ul>
-<li><code>machmal</code> — macht nach Bauzettel</li>
+<li><code>erschaffen</code> — macht nach Bauzettel</li>
 </ul>
 </details>
 </td>
 <td><code>make</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>vormachamt</code></summary>
+<summary><code>kreuzfundamenterschaffung</code></summary>
 <ul>
-<li><code>vormachamt</code> — erzeugt Machanweisung</li>
+<li><code>kreuzfundamenterschaffung</code> — erzeugt Machanweisung</li>
 </ul>
 </details>
 </td>
 <td><code>cmake</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -978,19 +1180,17 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>gcc</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>schlangenamt</code></summary>
+<summary><code>schlangenamt3</code></summary>
 <ul>
-<li><code>schlangenamt</code> — führt Schlangenwerk aus</li>
+<li><code>schlangenamt3</code> — führt Schlangenwerk aus</li>
 </ul>
 </details>
 </td>
 <td><code>python3</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -1002,7 +1202,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>pip</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
@@ -1015,31 +1214,28 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>jq</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>dateikampfstift</code></summary>
+<summary><code>sichtschreiber</code></summary>
 <ul>
-<li><code>dateikampfstift</code> — bearbeitet Text gefährlich</li>
+<li><code>sichtschreiber</code> — bearbeitet Text gefährlich</li>
 </ul>
 </details>
 </td>
 <td><code>vim</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td>
 <details>
-<summary><code>weichgriffschreiber</code></summary>
+<summary><code>winzigschreibstube</code></summary>
 <ul>
-<li><code>weichgriffschreiber</code> — bearbeitet Text sanft</li>
+<li><code>winzigschreibstube</code> — bearbeitet Text sanft</li>
 </ul>
 </details>
 </td>
 <td><code>nano</code></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -1048,7 +1244,7 @@ muschel verzeichnis liste .
 
 <table>
 <thead>
-<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th><th>Freigegeben</th></tr>
+<tr><th>Befehl</th><th>Angelsächsischer unredlicher Befehl</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -1067,7 +1263,6 @@ muschel verzeichnis liste .
 </details>
 </td>
 <td><code>docker</code></td>
-<td align="center">✅</td>
 </tr>
 </tbody>
 </table>

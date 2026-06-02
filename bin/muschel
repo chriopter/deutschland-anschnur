@@ -363,8 +363,8 @@ class Muschel:
             f"__ANSCHNUR_MUSCHEL={muschelpfad}",
             "export ANSCHNUR_IN_MUSCHEL=1",
             "PS1='muschel \\w > '",
-            "hilfe() { \"$__ANSCHNUR_MUSCHEL\" hilfe \"$@\"; }",
-            "verlassen() { exit; }",
+            "gehilfe() { \"$__ANSCHNUR_MUSCHEL\" gehilfe \"$@\"; }",
+            "exitus() { exit; }",
             "__anschnur_befehle=(",
         ]
         zeilen.extend(f"  {shlex.quote(zeile)}" for zeile in befehlszeilen)
@@ -390,19 +390,20 @@ class Muschel:
             "  COMPREPLY=($(compgen -W \"${antwort[*]}\" -- \"$cur\"))",
             "}",
         ])
+        # Die Muschel-Funktion wird unbedingt erzeugt, auch wenn "muschel"
+        # nicht (mehr) als erstes Befehlswort in "haupt" vorkommt.
+        zeilen.append(
+            "muschel() { if [ $# -eq 0 ]; then printf '%s\\n' 'Muschel ist bereits geöffnet.'; "
+            "else \"$__ANSCHNUR_MUSCHEL\" muschel \"$@\"; fi; }"
+        )
         for name in haupt:
-            if name in {"hilfe", "verlassen"}:
+            if name in {"gehilfe", "exitus", "muschel"}:
                 continue
             sicher = shlex.quote(name)
-            if name == "muschel":
+            if name == "changiere":
                 zeilen.append(
-                    "muschel() { if [ $# -eq 0 ]; then printf '%s\\n' 'Muschel ist bereits geöffnet.'; "
-                    "else \"$__ANSCHNUR_MUSCHEL\" muschel \"$@\"; fi; }"
-                )
-            elif name == "verzeichnis":
-                zeilen.append(
-                    "verzeichnis() { if [ \"$1\" = wechsel ]; then shift; cd \"$@\"; "
-                    "else \"$__ANSCHNUR_MUSCHEL\" verzeichnis \"$@\"; fi; }"
+                    "changiere() { if [ \"$1\" = direktionsort ]; then shift; cd \"$@\"; "
+                    "else \"$__ANSCHNUR_MUSCHEL\" changiere \"$@\"; fi; }"
                 )
             else:
                 zeilen.append(f"{name}() {{ \"$__ANSCHNUR_MUSCHEL\" {sicher} \"$@\"; }}")
@@ -426,7 +427,7 @@ class Muschel:
         if sys.stdin.isatty():
             self.pruefe_aktualisierung()
             print("Deutschland Anschnur Muschel")
-            print("Bash-Betriebsraum aktiv. 'hilfe' zeigt Amtsbefehle, 'verlassen' schließt.")
+            print("Bash-Betriebsraum aktiv. 'gehilfe' zeigt Amtsbefehle, 'exitus' schließt.")
             self.starte_bash()
             return
         for zeile in sys.stdin:
